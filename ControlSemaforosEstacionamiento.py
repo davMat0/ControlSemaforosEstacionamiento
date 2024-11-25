@@ -7,7 +7,7 @@ semaforo = threading.Semaphore(3)
 def accederEstacionamiento(idVehiculo):
     semaforo.acquire()
     print(f"Vehículo {idVehiculo} ha entrado al estacionamiento")
-    time.sleep(random.uniform(5,10))
+    time.sleep(random.uniform(1,3))
     print(f"Vehículo {idVehiculo} ha salido del estacionamiento")
     semaforo.release()
 
